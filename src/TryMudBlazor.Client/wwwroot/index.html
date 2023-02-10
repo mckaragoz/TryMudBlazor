@@ -30,9 +30,9 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400" rel="stylesheet">
 
-    <link href="_content/MudBlazor/MudBlazor.min.css?v=6.1.2" rel="stylesheet" />
-    <link href="_content/CodeBeam.MudExtensions/MudExtensions.min.css?v=6.1.1" rel="stylesheet" />
-    <link href="css/TryMudBlazor.min.css?v=6.1.2" rel="stylesheet" />
+    <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
+    <link href="_content/CodeBeam.MudExtensions/MudExtensions.min.css" rel="stylesheet" />
+    <link href="css/TryMudBlazor.min.css" rel="stylesheet" />
 
     <script src="lib/split.js/split.min.js"></script>
     <script src="lib/monaco-editor/min/vs/loader.js"></script>
@@ -63,17 +63,18 @@
         <a class="dismiss">🗙</a>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
-    <script src="_content/MudBlazor/MudBlazor.min.js?v=6.1.2"></script>
-    <script src="js/app.js?v=6.1.2"></script>
-      <script type="text/javascript">
+    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
+    <script src="_content/CodeBeam.MudExtensions/MudExtensions.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
 
-    window.addEventListener('storage', (e) => {
-        if (e.key == "userPreferences") {
-            const style = parent.document.getElementsByTagName('style')[5];
-            const existingStyle = document.getElementsByTagName('style')[3];
-            existingStyle.innerHTML = style.innerHTML;
-        }
-    });
+        window.addEventListener('storage', (e) => {
+            if (e.key == "userPreferences") {
+                const style = parent.document.getElementsByTagName('style')[5];
+                const existingStyle = document.getElementsByTagName('style')[3];
+                existingStyle.innerHTML = style.innerHTML;
+            }
+        });
 
     </script>
 </body>

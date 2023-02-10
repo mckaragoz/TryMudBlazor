@@ -14,6 +14,7 @@ namespace TryMudBlazor.Client
     using Microsoft.Extensions.Logging;
     using Microsoft.JSInterop;
     using MudBlazor.Services;
+    using MudExtensions.Services;
     using Services.UserPreferences;
     using Try.UserComponents;
 
