@@ -36,6 +36,7 @@ namespace TryMudBlazor.Client
 
             builder.Logging.Services.AddSingleton<ILoggerProvider, HandleCriticalUserComponentExceptionsLoggerProvider>();
             builder.Services.AddMudServices();
+            builder.Services.AddMudExtensions();
             builder.Services.AddBlazoredLocalStorage();
             builder.Services.AddScoped<IUserPreferencesService, UserPreferencesService>();
             builder.Services.AddScoped<LayoutService>();
