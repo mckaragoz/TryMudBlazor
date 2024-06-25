@@ -9,6 +9,7 @@
     using Microsoft.CodeAnalysis;
     using Microsoft.JSInterop;
     using MudBlazor;
+    using MudExtensions;
     using Try.Core;
     using TryMudBlazor.Client.Components;
     using TryMudBlazor.Client.Models;
@@ -80,6 +81,15 @@
             get
             {
                 var v = typeof(MudText).Assembly.GetName().Version;
+                return $"v{v.Major}.{v.Minor}.{v.Build}";
+            }
+        }
+
+        private string MudExtensionsVersion
+        {
+            get
+            {
+                var v = typeof(MudLoadingButton).Assembly.GetName().Version;
                 return $"v{v.Major}.{v.Minor}.{v.Build}";
             }
         }
