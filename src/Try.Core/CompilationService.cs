@@ -34,6 +34,7 @@
 @using Microsoft.AspNetCore.Components.Web
 @using Microsoft.JSInterop
 @using MudBlazor
+@using MudExtensions
 ";
 
         private const string MudBlazorServices = @"
