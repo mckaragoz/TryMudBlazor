@@ -8,6 +8,7 @@
     using System.Linq;
     using System.Net.Http;
     using System.Net.Http.Json;
+    using System.Net.NetworkInformation;
     using System.Runtime;
     using System.Text;
     using System.Threading.Tasks;
@@ -34,7 +35,8 @@
             "@using Microsoft.AspNetCore.Components.Routing",
             "@using Microsoft.AspNetCore.Components.Web",
             "@using Microsoft.JSInterop",
-            "@using MudBlazor"
+            "@using MudBlazor",
+            "@using MudExtensions"
         ];
 
         private const string MudBlazorServices = @"
@@ -68,6 +70,7 @@
                 typeof(IJSRuntime).Assembly, // Microsoft.JSInterop
                 typeof(RequiredAttribute).Assembly, // System.ComponentModel.Annotations
                 typeof(MudBlazor.MudButton).Assembly, // MudBlazor
+                typeof(MudExtensions.MudLoadingButton).Assembly, // CodeBeam.MudExtensions
                 typeof(WebAssemblyHostBuilder).Assembly, // Microsoft.AspNetCore.Components.WebAssembly
                 typeof(FluentValidation.AbstractValidator<>).Assembly,
             };
